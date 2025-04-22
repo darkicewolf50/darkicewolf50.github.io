@@ -1,5 +1,5 @@
 [package]
-name = "temp"
+name = "personal_site"
 version = "0.1.0"
 edition = "2021"
 authors = ["darkicewolf50 <brock.tomlinson@ucalgary.ca>"]

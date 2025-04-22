@@ -1,52 +1,16 @@
-use crate::components::counter_btn::Button;
+use crate::components::technologies::{TechDescription, __technology_cat};
 use leptos::prelude::*;
 
-/// Default Home Page
-#[component]
-pub fn Home() -> impl IntoView {
+pub fn home() -> impl IntoView {
+    let temp_vec = vec![TechDescription {
+        lang_name: "Rust Language",
+        project_site_link: "https://www.rust-lang.org",
+        skill_level: 20,
+        lang_logo: "https://www.rust-lang.org/static/images/rust-logo-blk.svg",
+    }];
     view! {
-        <ErrorBoundary fallback=|errors| {
-            view! {
-                <h1>"Uh oh! Something went wrong!"</h1>
-
-                <p>"Errors: "</p>
-                // Render a list of errors as strings - good for development purposes
-                <ul>
-                    {move || {
-                        errors
-                            .get()
-                            .into_iter()
-                            .map(|(_, e)| view! { <li>{e.to_string()}</li> })
-                            .collect_view()
-                    }}
-
-                </ul>
-            }
-        }>
-
-            <div class="container">
-
-                <picture>
-                    <source
-                        srcset="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_pref_dark_RGB.svg"
-                        media="(prefers-color-scheme: dark)"
-                    />
-                    <img
-                        src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg"
-                        alt="Leptos Logo"
-                        height="200"
-                        width="400"
-                    />
-                </picture>
-
-                <h1>"Welcome to Leptos"</h1>
-
-                <div class="buttons">
-                    <Button />
-                    <Button increment=5 />
-                </div>
-
-            </div>
-        </ErrorBoundary>
+        <h1>Technology</h1>
+        <p>What Technologies I prefer to use.</p>
+        <technology_cat category="Languages" tech_vec=temp_vec />
     }
 }

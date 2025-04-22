@@ -1054,6 +1054,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e3148f5046208a5d56bcfc03053e3ca6334e51da8dfb19b6cdc8b306fae3283e"
 
 [[package]]
+name = "personal_site"
+version = "0.1.0"
+dependencies = [
+ "console_error_panic_hook",
+ "console_log",
+ "leptos",
+ "leptos_meta",
+ "leptos_router",
+ "log",
+ "wasm-bindgen",
+ "wasm-bindgen-test",
+ "web-sys",
+]
+
+[[package]]
 name = "pin-project"
 version = "1.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1538,21 +1553,6 @@ dependencies = [
  "slotmap",
  "throw_error",
  "wasm-bindgen",
- "web-sys",
-]
-
-[[package]]
-name = "temp"
-version = "0.1.0"
-dependencies = [
- "console_error_panic_hook",
- "console_log",
- "leptos",
- "leptos_meta",
- "leptos_router",
- "log",
- "wasm-bindgen",
- "wasm-bindgen-test",
  "web-sys",
 ]
 
