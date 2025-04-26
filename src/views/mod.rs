@@ -24,4 +24,4 @@ mod contact;
 pub use contact::Contact;
 
 mod projects;
-pub use projects::{ProjectCards, Projects};
+pub use projects::Projects;
