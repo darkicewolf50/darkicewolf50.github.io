@@ -1,4 +1,8 @@
 [application]
+# `build` & `serve` output path
+out_dir = "dist"
+# The static resource path
+asset_dir = "public"
 
 [web.app]
 # HTML title tag content
