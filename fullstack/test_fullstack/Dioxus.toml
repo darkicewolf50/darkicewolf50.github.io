@@ -1,18 +1,21 @@
 [application]
 
 [web.app]
+
 # HTML title tag content
-title = "Brock Tomlinson"
+title = "test_fullstack"
 
 # include `assets` in web platform
 [web.resource]
-base_path = "darkicewolf50.github.io"
+
 # Additional CSS style files
 style = []
+
 # Additional JavaScript files
 script = []
 
 [web.resource.dev]
+
 # Javascript code file
 # serve: [dev-server] only
 script = []

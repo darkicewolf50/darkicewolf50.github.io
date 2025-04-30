@@ -1,10 +1,11 @@
 [package]
-name = "personal_site"
-version = "1.0.0"
+name = "test_fullstack"
+version = "0.1.0"
 authors = ["darkicewolf50 <brock.tomlinson@ucalgary.ca>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [dependencies]
 dioxus = { version = "0.6.0", features = ["router", "fullstack"] }
 
@@ -16,15 +17,3 @@ web = ["dioxus/web"]
 desktop = ["dioxus/desktop"]
 # The feature that are only required for the mobile = ["dioxus/mobile"] build target should be optional and only enabled in the mobile = ["dioxus/mobile"] feature
 mobile = ["dioxus/mobile"]
-
-[profile]
-
-[profile.wasm-dev]
-inherits = "dev"
-opt-level = 1
-
-[profile.server-dev]
-inherits = "dev"
-
-[profile.android-dev]
-inherits = "dev"

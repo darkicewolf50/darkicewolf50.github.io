@@ -1,7 +1,6 @@
 #home-intro {
 	display: flex;
 	flex-direction: column;
-	width: 90%;
 	margin-top: 2svh;
 	background-color: var(--card-background-color);
 	border-radius: var(--card-border-radius);

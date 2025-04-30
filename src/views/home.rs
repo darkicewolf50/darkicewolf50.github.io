@@ -49,12 +49,12 @@ pub fn Home() -> Element {
                 }
                 p {
                     "I grew up in a small ski town where, I started learning about programming, from of course Minecraft,
-                where I thought the application of this was so futuristic and downright cool that I knew I wanted to persure it further. 
+                where I thought the application of this was so futuristic and downright cool that I knew I wanted to persue it further. 
                 While living there I spend a majority of my time outside of school swimming competitively, where I ranked top 10 in BC. 
                 Along with swimming I spend a lot of time volunteering with fundraising events and coaching the local Special Olympics swim team."
                 }
                 p {
-                    "I advore problem solving and building cool stuff, I'm happy to jump in and get started! "
+                    "I adore problem solving and building cool stuff, I'm happy to jump in and get started! "
                     Link { to: Route::Contact {}, "Let's create something great together!" }
                 }
             }

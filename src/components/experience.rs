@@ -111,6 +111,6 @@ const EXPERIENCE_VOL: [ExpDes; 4] = [
         company: "Elk Valley Dolphins",
         location: "BC",
         start_month: "May 2019",
-        end_month: "May 2019",
+        end_month: "May 2017",
     },
 ];
